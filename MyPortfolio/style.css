@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* --- GLOBAL FIX: PUSH CONTENT DOWN FOR FIXED NAVBAR --- */
+body {
+    padding-top: 56px; 
+}
+
+/* ----------------------------------------------------- */
+/* --- FIX: JUMP LINK OFFSET FOR FIXED NAVBAR COVERAGE --- */
+/* This ensures that when navigating to an ID (like #aboutSection), the content isn't hidden behind the fixed navbar. 56px is the approximate height of the navbar. */
+/* ----------------------------------------------------- */
+.about-me, .projects {
+    scroll-padding-top: 56px; 
+}
+
+/* --- General Styles --- */
+.logo {
+    font-family: "Roboto";
+    border-color: #4b6cc1;
+    border-style: solid;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* --- Hero Section Background and Vertical Centering --- */
+.main-bg {
+    background-color: #191a1d; /* Black Background */
+    min-height: 100vh;
+    background-size: cover;
+    display: flex; 
+    align-items: center;
+}
+
+/* --- Consolidated Profile Picture Styling (Applies to both sections) --- */
+.info-pic {
+    height: 250px;
+    width: 250px;
+    margin: 10px auto; 
+    display: block; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* --- Hero Text Styles (White text for dark background) --- */
+.info-heading {
+    color: white;
+    font-family: "Roboto";
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info-heading span {
+    color: #4b6cc1; /* Accent Blue */
+}
+
+.info-para {
+    color: #9aa5b1;
+    margin-bottom: 10px;
+}
+
+/* --- About Me Section Styles (Dark text for light background) --- */
+.about-me {
+    background-color: #f8f9fa; /* Light Gray/Off-White Background */
+    padding: 60px 0; 
+}
+
+.about-heading {
+    color: #191a1d; /* Dark text */
+    font-family: "Roboto";
+    font-weight: 700; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ----------------------------------------------------- */
+/* --- UPDATED: ABOUT ME STYLES FOR EQUAL HEIGHT APPEARANCE --- */
+/* ----------------------------------------------------- */
+
+/* 1. Ensure the paragraph itself fills the container and is aligned correctly. */
+.about-para {
+    color: #495057 !important; 
+    /* Removed margin-top to allow the text to flow from the top of the column */
+    text-align: justify;
+    /* Added some vertical centering to the text block itself */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* Important: Makes the flex container take full height of the column */
+}
+
+.about-para span {
+    color: #4b6cc1; /* Apply blue accent to highlighted text */
+    font-weight: 600;
+}
+
+/* 2. Style the image to fill the available space without distorting. */
+.about-me .row img {
+    /* Set max-width to 100% to ensure responsiveness */
+    max-width: 100%;
+    /* Set height to auto to maintain aspect ratio */
+    height: auto; 
+    /* We still want the image to be centered if its natural height is less than the column height */
+    margin: 0 auto; 
+    display: block; 
+    /* Remove any unnecessary height constraints that might crop the image */
+    max-height: none; 
+}
+
+/* For visual balance on desktop, ensure the text column has enough padding to look nice */
+@media (min-width: 768px) {
+    .about-me .col-md-6 {
+        /* This padding helps visually balance the text box with the image */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* --- Projects Section Styles (High Contrast Dark Theme) --- */
+.projects {
+    background-color: #191a1d; 
+    padding: 60px 0; 
+}
+
+.heading-2 {
+    color: white; 
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Roboto";
+    margin-bottom: 30px;
+}
+
+.heading-3 {
+    color: white; 
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Roboto";
+}
+
+.project-card {
+    background-color: #212529; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); 
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.wd {
+    color: #ced4da; 
+    font-family: "Roboto";
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.para {
+    color: #adb5bd; 
+    font-family: "Roboto";
+}
+
+.link {
+    color: #4b6cc1; 
+    font-weight: 500;
+    display: inline-block; 
+    margin-top: 5px;
+    text-decoration: none;
+}
+.link:hover {
+    color: #8db5ff; 
+    text-decoration: underline;
+}
+.recent-blogs{
+    background-image:url("https://res.cloudinary.com/dk6x9gpyl/image/upload/v1759687783/46ba8880-df57-11ea-8b79-54878a29a02f_qe0lia.png");
+    height:100vh;
+    width: 100%;
+    background-size:cover;
+}
+.testimonial{
+    background-image:url("https://res.cloudinary.com/dk6x9gpyl/image/upload/v1760259079/under-constructions-web-page-templates-vector_zlgpkx.jpg");
+    height:100vh;
+    width: 100%;
+    background-size:cover;
+}
+.heading-4{
+    color: white; 
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Roboto";
+    margin-bottom: 30px;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
+  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' 
+  stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' 
+  d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+}

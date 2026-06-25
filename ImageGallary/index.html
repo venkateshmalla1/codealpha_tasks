@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Creative Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+<h1>📸 Creative Gallery</h1>
+
+<div class="controls">
+
+<button class="filter active" data-filter="all">
+All
+</button>
+
+<button class="filter" data-filter="nature">
+Nature
+</button>
+
+<button class="filter" data-filter="city">
+City
+</button>
+
+<button class="filter" data-filter="animals">
+Animals
+</button>
+
+<button class="filter" data-filter="food">
+Food
+</button>
+
+<button class="filter" data-filter="travel">
+Travel
+</button>
+<input
+type="text"
+id="search"
+placeholder="Search images..."
+>
+
+
+
+<button id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+</div>
+</header>
+
+<div id="gallery" class="gallery"></div>
+
+<!-- Lightbox -->
+
+<div class="lightbox">
+
+<button class="prev">
+❮
+</button>
+
+<img id="lightboxImg">
+
+<button class="next">
+❯
+</button>
+
+<span class="close">
+×
+</span>
+
+<div id="caption"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
