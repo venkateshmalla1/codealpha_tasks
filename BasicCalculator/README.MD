@@ -31,3 +31,30 @@ By leveraging **Object-Oriented Programming (OOP) in JavaScript** alongside **Bo
 ├── style.css      # Visual overrides, background vectors, and responsive scaling rules
 ├── script.js      # Logical implementation containing the encapsulated Calculator engine
 └── README.md      # Project overview and run configurations
+
+🚀 How to Run the Project Locally
+1.  Clone the Repository:
+
+Bash
+git clone [https://github.com/venkateshmalla1/codealpha_tasks.git](https://github.com/venkateshmalla1/codealpha_tasks.git)
+2. Navigate to the Gallery Directory:
+
+Bash
+cd codealpha_tasks/ImageGallary
+3. Launch the Application:
+
+Open the index.html file in any modern web browser to view the gallery.
+
+If using VS Code, right-click index.html and select "Open with Live Server" for an optimized preview.
+
+💻 Technical Highlights
+Responsive Layout: The design utilizes CSS properties to automatically rearrange the image grid based on the viewport width, ensuring no layout breakage.
+
+Maintainable CSS: Organized stylesheets allow for easy modification of gallery themes, spacing, or column counts.
+
+🎓 Internship Acknowledgments
+Organization: CodeAlfa
+
+Role: Frontend Web Development Intern
+
+Task: Image Gallery Design Assignment
