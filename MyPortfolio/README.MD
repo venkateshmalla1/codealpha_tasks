@@ -28,7 +28,9 @@ This repository hosts the code for my **Personal Professional Portfolio Webpage*
 ├── style_3.css          # Component modifications, typography layers, and transition setups
 └── README.md            # Documentation handbook
 👤 About the DeveloperI am an aspiring Full-Stack Software Developer currently mastering modern technical principles at NxtWave CCBP 4.0. My background provides a rare intersection of precise engineering principles alongside advanced critical analysis tools:  Technical Engineering: Diploma in Electronics and Communication Engineering (ECE).  Humanities & Ethics: Academic degrees in English and a B.A. in Philosophy, featuring published work investigating the philosophical relationship between humans and technological advancement[cite: 8].
-🚀 How to Clone and Launch the App LocallyFollow these simple steps to download and view the portfolio repository on your computer:
+---
+
+## 🚀 How to Clone and Launch the App LocallyFollow these simple steps to download and view the portfolio repository on your computer:
 1. Clone the RepositoryOpen your terminal (or Command Prompt) and run the following command to download the codebase using Git:Bashgit clone [https://github.com/venkateshmalla1/codealpha_tasks.git](https://github.com/venkateshmalla1/codealpha_tasks.git)
 2. Navigate into the Project FolderMove into the specific directory where the portfolio files reside:Bashcd codealpha_tasks/MyPortfolio
 3. Launch the ApplicationDirect Execution: Simply double-click the my portipolio.html file in your local file explorer to run and view the static application inside your preferred modern web browser (Chrome, Firefox, Safari, Edge)[cite: 8].VS Code Live Server: If you have the project opened inside Visual Studio Code, right-click on my portipolio.html and select "Open with Live Server" to establish a local hot-reloading pipeline[cite: 8].
